@@ -1,0 +1,4 @@
+import pandas as pd
+data = pd.read_csv('stopWords.csv', low_memory=False, encoding='utf-8')
+stopwords = data.loc[:,"stop_words"]
+print(stopwords)
